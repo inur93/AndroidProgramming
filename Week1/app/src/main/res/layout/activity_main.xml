@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="weeklyprojects.pop.dk.week1.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vejledning"
+        android:id="@+id/btnGuide"
+        android:layout_below="@+id/imgAndroid"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the first week of android"
+        android:id="@+id/txtWelcome"
+        android:layout_alignTop="@+id/imgAndroid"
+        android:layout_toEndOf="@+id/imgAndroid"
+        android:layout_alignBottom="@+id/imgAndroid" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgAndroid"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnGuide" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indstillinger"
+        android:id="@+id/btnSettings"
+        android:layout_alignBottom="@+id/btnGuide"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtStatus"
+        android:layout_alignBottom="@+id/btnGuide"
+        android:layout_alignTop="@+id/btnSettings"
+        android:layout_alignStart="@+id/txtWelcome"
+        android:layout_toStartOf="@+id/btnSettings"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputAddress"
+        android:layout_below="@+id/btnGuide"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:layout_toStartOf="@+id/btnGo"
+        android:width="50px" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:id="@+id/btnGo"
+        android:layout_alignBottom="@+id/inputAddress"
+        android:layout_alignParentEnd="true" />
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/webView"
+        android:layout_below="@+id/inputAddress"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/btnGo" />
+</RelativeLayout>
