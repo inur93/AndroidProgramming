@@ -77,6 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         txtStatus.setText(text);
         handler.postDelayed(runnable,2000);
 
+
 /*        if(task != null) task.cancel();
 
         task = new TimerTask() {
