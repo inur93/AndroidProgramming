@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="weeklyprojects.pop.dk.week2.AddWordActivity">
+
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editWordAdd"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:text="Add Word"
+        android:id="@+id/btnAddWord"
+        android:layout_below="@+id/editWordAdd"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:text="Add a word to the current game. or select a word you want to change or delete. **Currently not working**"
+        android:id="@+id/lblAddWordHelp"
+        android:layout_below="@+id/btnAddWord"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/lblAddWordHelp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnRemoveWord"
+        android:choiceMode="singleChoice" />
+
+    <Button
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:text="Remove Selected Word"
+        android:id="@+id/btnRemoveWord"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
