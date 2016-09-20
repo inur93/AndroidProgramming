@@ -19,7 +19,7 @@
     <Button
         android:layout_width="290dp"
         android:layout_height="wrap_content"
-        android:text="Add Word"
+        android:text="@string/add_word"
         android:id="@+id/btnAddWord"
         android:layout_below="@+id/editWordAdd"
         android:layout_centerHorizontal="true" />
@@ -27,7 +27,7 @@
     <TextView
         android:layout_width="290dp"
         android:layout_height="wrap_content"
-        android:text="Add a word to the current game. or select a word you want to change or delete. **Currently not working**"
+        android:text="@string/add_a_word_to_the_current_game_or_select_a_word_you_want_to_change_or_delete_currently_not_working"
         android:id="@+id/lblAddWordHelp"
         android:layout_below="@+id/btnAddWord"
         android:layout_centerHorizontal="true" />
@@ -44,7 +44,7 @@
     <Button
         android:layout_width="290dp"
         android:layout_height="wrap_content"
-        android:text="Remove Selected Word"
+        android:text="@string/remove_selected_word"
         android:id="@+id/btnRemoveWord"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />

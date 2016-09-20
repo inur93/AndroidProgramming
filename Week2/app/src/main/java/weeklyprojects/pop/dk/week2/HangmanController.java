@@ -25,7 +25,7 @@ public class HangmanController {
     private boolean hasLost;
 
     public HangmanController(){
-
+        getPossibleWords();
         reset();
     }
 

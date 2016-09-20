@@ -43,7 +43,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Vælg"
+        android:text="@string/v_lg"
         android:id="@+id/btnSelectLetter"
         android:layout_alignTop="@+id/btnRestart"
         android:layout_toStartOf="@+id/btnRestart" />
@@ -51,7 +51,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Genstart"
+        android:text="@string/genstart"
         android:id="@+id/btnRestart"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true" />

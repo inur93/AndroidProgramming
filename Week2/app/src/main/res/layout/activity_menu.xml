@@ -20,29 +20,51 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Epic hangman game"
+            android:text="@string/epic_hangman_game"
             android:id="@+id/lblGameTitle"
             android:layout_gravity="center_horizontal" />
 
         <Button
             android:layout_width="290dp"
             android:layout_height="wrap_content"
-            android:text="Start game"
+            android:text="@string/start_game"
             android:id="@+id/btnStart"
             android:layout_gravity="center_horizontal" />
 
         <Button
             android:layout_width="290dp"
             android:layout_height="wrap_content"
-            android:text="Help"
+            android:text="@string/btn_menu_help"
             android:id="@+id/btnHelp"
             android:layout_gravity="center_horizontal" />
 
         <Button
             android:layout_width="290dp"
             android:layout_height="wrap_content"
-            android:text="Add Words"
+            android:text="@string/add_words"
             android:id="@+id/btnAddWords"
             android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:text="Login with google"
+            android:id="@+id/btnGoogleLogin"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:text="Google name"
+            android:id="@+id/txtGoogleName"
+            android:layout_gravity="center_horizontal" />
+
+        <CheckBox
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:text="Use words from dr.dk"
+            android:id="@+id/useDrWords"
+            android:layout_gravity="center_horizontal"
+            android:checked="true" />
     </LinearLayout>
 </RelativeLayout>

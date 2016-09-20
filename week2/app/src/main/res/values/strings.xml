@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Week2</string>
+    <string name="add_a_word_to_the_current_game_or_select_a_word_you_want_to_change_or_delete_currently_not_working">Add a word to the current game. or select a word you want to change or delete. **Currently not working**</string>
+    <string name="add_word">Add Word</string>
+    <string name="remove_selected_word">Remove Selected Word</string>
+    <string name="help">Help</string>
+    <string name="if_you_really_needed_this_option_there_is_something_wrong_with_you_everyone_knows_how_to_play_hangman_if_you_just_were_curious_surprise_there_is_nothing_helpful_form_me_today">If you really needed this option there is something wrong with you. Everyone knows how to play hangman. If you just were curious.. surprise! There is nothing helpful form me today.</string>
+    <string name="v_lg">Vælg</string>
+    <string name="genstart">Genstart</string>
+    <string name="epic_hangman_game">Epic hangman game</string>
+    <string name="start_game">Start game</string>
+    <string name="btn_menu_help">Help</string>
+    <string name="add_words">Add Words</string>
 </resources>
