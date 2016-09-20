@@ -7,6 +7,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -14,7 +15,7 @@ import java.util.Random;
  */
 public class HangmanController {
 
-    private ArrayList<String> possibleWords = new ArrayList<String>();
+    private static ArrayList<String> possibleWords = new ArrayList<String>();
     private String word;
     private ArrayList<String> usedLetters = new ArrayList<String>();
     private String visibleWord;
@@ -24,14 +25,7 @@ public class HangmanController {
     private boolean hasLost;
 
     public HangmanController(){
-        possibleWords.add("bil");
-        possibleWords.add("computer");
-        possibleWords.add("programmering");
-        possibleWords.add("motorvej");
-        possibleWords.add("busrute");
-        possibleWords.add("gangsti");
-        possibleWords.add("skovsnegl");
-        possibleWords.add("solsort");
+
         reset();
     }
 
@@ -135,6 +129,20 @@ public class HangmanController {
             linje = br.readLine();
         }
         return sb.toString();
+    }
+
+    public static List<String> getPossibleWords(){
+        if(possibleWords.isEmpty()){
+            possibleWords.add("bil");
+            possibleWords.add("computer");
+            possibleWords.add("programmering");
+            possibleWords.add("motorvej");
+            possibleWords.add("busrute");
+            possibleWords.add("gangsti");
+            possibleWords.add("skovsnegl");
+            possibleWords.add("solsort");
+        }
+        return possibleWords;
     }
 
     public void getWordFromDR() throws Exception {
