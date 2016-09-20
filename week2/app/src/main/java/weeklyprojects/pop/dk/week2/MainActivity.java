@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText usedLetters;
     private EditText visibleWord;
     private EditText inputWord;
-    private Button btnSelect;
+    private Button btnSelect, btnRestart;
     private ImageView imageView;
 
     private  HangmanController hangmanController;
@@ -39,12 +39,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         this.visibleWord = (EditText) findViewById(R.id.visibleWord);
         this.inputWord = (EditText) findViewById(R.id.inputSelectLetter);
         this.btnSelect = (Button) findViewById(R.id.btnSelectLetter);
+        this.btnRestart = (Button) findViewById(R.id.btnRestart);
         this.imageView = (ImageView) findViewById(R.id.imageView);
+
 
         this.usedLetters.setEnabled(false);
         this.visibleWord.setEnabled(false);
 
         this.btnSelect.setOnClickListener(this);
+        this.btnRestart.setOnClickListener(this);
         hangmanController = new HangmanController();
 
         restart();
@@ -57,9 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch(v.getId()){
             case R.id.btnSelectLetter:
                 String letter = inputWord.getText().toString();
-
                 guessLetter(letter);
-
                 break;
             case R.id.btnRestart:
                 restart();
