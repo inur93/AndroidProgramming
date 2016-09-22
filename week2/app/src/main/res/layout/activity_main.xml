@@ -7,52 +7,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="weeklyprojects.pop.dk.week2.MainActivity">
-
-    <EditText
-        android:layout_width="wrap_content"
+    tools:context="weeklyprojects.pop.dk.week2.MainActivity"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/visibleWord"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/fragmentContainer">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/inputUsedLetter"
-        android:layout_alignEnd="@+id/visibleWord"
-        android:layout_alignStart="@+id/visibleWord"
-        android:layout_below="@+id/visibleWord" />
+    </RelativeLayout>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:layout_below="@+id/inputUsedLetter"
-        android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/inputUsedLetter"
-        android:layout_above="@+id/inputSelectLetter" />
-
-    <EditText
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/inputSelectLetter"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/v_lg"
-        android:id="@+id/btnSelectLetter"
-        android:layout_alignTop="@+id/btnRestart"
-        android:layout_toStartOf="@+id/btnRestart" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/genstart"
-        android:id="@+id/btnRestart"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
 </RelativeLayout>

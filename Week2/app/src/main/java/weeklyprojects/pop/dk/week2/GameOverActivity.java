@@ -15,7 +15,8 @@ public class GameOverActivity extends AppCompatActivity {
         setContentView(R.layout.activity_game_over);
         ImageView img = (ImageView) findViewById(R.id.imgGameOver);
 
-        if(getIntent().getExtras().getBoolean("hasWon", false)){
+
+        if( getIntent().getExtras().getBoolean("hasWon", false)){
             img.setImageResource(R.drawable.winner);
         }else{
             img.setImageResource(R.drawable.loser);

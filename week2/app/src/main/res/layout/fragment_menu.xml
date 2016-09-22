@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="weeklyprojects.pop.dk.week2.fragments.Menu">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:weightSum="1"
+        android:background="#eae1e1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Super Awesome Hangman"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.07"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Game"
+            android:id="@+id/btnStartGame"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.07" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:id="@+id/btnHelp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.07" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use words from DR"
+            android:id="@+id/checkUseDRWords"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.07"
+            android:checked="true" />
+    </LinearLayout>
+</FrameLayout>
