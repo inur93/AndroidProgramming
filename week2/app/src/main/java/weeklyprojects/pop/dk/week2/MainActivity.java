@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
 
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -25,11 +26,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_ACTION_BAR);
         setContentView(R.layout.activity_main);
 
-        Fragment game = new weeklyprojects.pop.dk.week2.fragments.Menu();
+        Fragment menu = new weeklyprojects.pop.dk.week2.fragments.Menu();
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragmentContainer, game)
+                .replace(R.id.fragmentContainer, menu)
                 .commit();
 
 
